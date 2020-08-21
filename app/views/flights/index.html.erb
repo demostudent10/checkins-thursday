@@ -44,10 +44,6 @@
     <table>
       <tr>
         <th>
-          ID
-        </th>
-
-        <th>
           User
         </th>
 
@@ -78,11 +74,7 @@
       <% @list_of_flights.each do |a_flight| %>
       <tr>
         <td>
-          <%= a_flight.id %>
-        </td>
-
-        <td>
-          <%= a_flight.user_id %>
+          <%= a_flight.user.email %>
         </td>
 
         <td>
